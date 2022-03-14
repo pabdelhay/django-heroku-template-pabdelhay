@@ -1,0 +1,18 @@
+<style>
+    body { font-family: "Calibri Light"; }
+    h1 { text-align: center; }
+    b { color: darkblue; }
+    ul li { margin-bottom: 10px; }
+    pre { background-color: #EEE; padding: 5px; display: inline-block; margin: 0 0; }
+    pre span { color: darkorange; }
+</style>
+<h1>Sample page with queryset</h1>
+
+<h3>These are the items set on <b>/project/views.py</b>. They all came from a queryset (data retrieved from database)</h3>
+<ul>
+    {% for item in items %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+{% include 'navigation.html' %}

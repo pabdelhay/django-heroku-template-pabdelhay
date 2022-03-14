@@ -1,2 +1,3 @@
-# django-heroku-template-pabdelhay
-A configured django template for deploying on heroku
+# A pre configured Django template for beginners.
+
+## Ready to use on heroku.

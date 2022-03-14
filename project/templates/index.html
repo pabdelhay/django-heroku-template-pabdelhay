@@ -1,0 +1,44 @@
+<style>
+    body { font-family: "Calibri Light"; }
+    h1 { text-align: center; }
+    b { color: darkblue; }
+    ul li { margin-bottom: 10px; }
+    pre { background-color: #EEE; padding: 5px; display: inline-block; margin: 0 0; }
+    pre span { color: darkorange; }
+</style>
+<body>
+    <h1>A Django template project for beginners</h1>
+
+    <h3>To create a new page</h3>
+    <ul>
+        <li>Set a new path on <b>/config/urls.py</b></li>
+        <li>Create a view on <b>/project/views.py</b></li>
+        <li>Create a template on <b>/project/templates</b></li>
+    </ul>
+
+    <h3>To create a new model</h3>
+    <ul>
+        <li>Create a new class on <b>/project/models.py</b></li>
+        <li>Run on console <pre>python manage.py makemigrations</pre></li>
+        <li>Run on console <pre>python manage.py migrate</pre></li>
+    </ul>
+
+    <h3>To run the webserver</h3>
+    <ul>
+        <li>Run on console <pre>python manage.py runserver</pre></li>
+    </ul>
+
+    <h3>To install requirements</h3>
+    <ul>
+        <li>All project packages: <pre>pip install -r requirements</pre></li>
+        <li>A single package: <pre>pip install <span>package</span></pre></li>
+    </ul>
+
+    <h3>To create a superuser</h3>
+    <ul>
+        <li>Run on console <pre>python manage.py createsuperuser</pre></li>
+        <li>Follow the instructions after the command</li>
+    </ul>
+
+    {% include 'navigation.html' %}
+</body>
