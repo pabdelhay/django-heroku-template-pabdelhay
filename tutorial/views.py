@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from project.models import SampleModel
+from tutorial.models import SampleModel
 
 
 def index(request):

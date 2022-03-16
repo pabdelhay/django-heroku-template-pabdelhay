@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from project.models import SampleModel
+from tutorial.models import SampleModel
 
 
 @admin.register(SampleModel)
