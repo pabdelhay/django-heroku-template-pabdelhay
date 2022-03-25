@@ -5,4 +5,4 @@ from tutorial.models import SampleModel
 
 @admin.register(SampleModel)
 class SampleModelAdmin(admin.ModelAdmin):
-    list_display = ['property_a', 'property_b']
+    list_display = ['attr_char', 'attr_int']
