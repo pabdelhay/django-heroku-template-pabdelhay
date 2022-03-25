@@ -5,7 +5,7 @@ import tutorial.views
 from tutorial.api import SampleModelViewset
 
 router = DefaultRouter()
-router.register(r'sample', SampleModelViewset, basename='budgets')
+router.register(r'sample', SampleModelViewset, basename='sample_api')
 
 urlpatterns = [
     path('', tutorial.views.index, name='index'),
